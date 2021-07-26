@@ -1,6 +1,6 @@
 <?php
 
-function binary_search($list, $item) {
+function binarySearch($list, $item) {
     $start = 0;
     $end = count($list) - 1;
 
@@ -22,5 +22,5 @@ function binary_search($list, $item) {
 
 $my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-echo binary_search($my_list, 4); // 3
-echo binary_search($my_list, -1); // no search
+echo binarySearch($my_list, 4); // 3
+echo binarySearch($my_list, -1); // no search
