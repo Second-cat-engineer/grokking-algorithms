@@ -33,11 +33,11 @@ function look_for_key_recursion($box) {
     foreach ($box as $value) {
 
         if ('key' === $value) {
-            return 'found the key';
+            return 'found the key';             // Базовый случай
         }
 
         if (is_array($value)) {
-            return look_for_key_recursion($value);
+            return look_for_key_recursion($value);  // Рекурсивный случай
         }
     }
 
